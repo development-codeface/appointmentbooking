@@ -8,18 +8,19 @@
                     <div class="card-body">
                         <div class="row">
                             <!-- {{$leaves}} -->
-                            <div class="col-md-3 col-lg-6">
+                            <!-- <div class="col-md-3 col-lg-6">
                                 <div class="form-group">
                                         <label >Employee ID:</label>
                                         <div class="input-group">
-                                        <input type="hidden" id="employee_id" value="{{ $doctor->id}}" name="employee_id" class="form-control" required>     
+                                        
                                         </div>
                                     </div>
-                            </div>
+                            </div> -->
 
                             <div class="col-md-3 col-lg-6">
                                 <div class="form-group">
                                     <label >Start Date:</label>
+                                    <input type="hidden" id="employee_id" value="{{ $doctor->id}}" name="employee_id" class="form-control" required>     
                                     <input type="date" id="start_date" name="start_date" class="form-control" required>
                                 </div>
                             </div>
