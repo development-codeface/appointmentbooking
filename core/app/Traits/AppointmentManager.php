@@ -155,10 +155,9 @@ trait AppointmentManager
             $pageTitle = "Appointment Payment Method";
             $gatewayCurrency = GatewayCurrency::whereHas('method', function ($gate) {
                 $gate->where('status', Status::ENABLE);
-                // Gateway::where('status', Status::ENABLE);
             })->with('method')->orderby('method_code')->get();
 
-            $gatewayCurrency = Gateway::where('status', Status::ENABLE)->get();
+            // $gatewayCurrency = Gateway::where('status', Status::ENABLE)->get();
             // print_r($gatewayCurrency);
             $fees     = $doctor->fees;
             $doctorId = $doctor->id;
