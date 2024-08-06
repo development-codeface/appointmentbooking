@@ -195,7 +195,7 @@
                                                                         @lang('Select Date')</option>
                                                                     @foreach ($availableDate as $date)
                                                                         <option value="{{ $date }}">
-                                                                            {{ __($date) }}</option>
+                                                                            {{ __(date('d-m-Y', strtotime($date))) }}</option>
                                                                     @endforeach
                                                                 </select>
                                                             </div>
